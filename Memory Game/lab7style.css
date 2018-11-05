@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 19, 2017, 1:28:59 AM
+    Author     : pmapfeka2014
+*/
+ table {
+                margin:auto;
+          
+               width:800px;
+               border:4px black;
+               
+               
+            }
+            
+            #uitable
+            {
+                 width:1800px;
+                 border:1px black;
+                 
+            }
+           
+            #td1
+            {
+              width:40%;
+                
+            }
+            
+            #td2
+            {
+                 width:45%;
+            }
+            
+            #td3
+            {
+                 width:20%;
+            }
+            img{
+                width: 200px;
+                height:270px;
+                
+            }
+              #div1{
+                margin: auto;
+                width: 50%;
+   
+                padding: 10px;
+                text-align: center;
+           
+              
+            }
+            
+            button{
+                height:50px;
+                width:300px;
+                background-color:green;
+                 font-size: 100%;
+              
+            }
+            
+            body{
+                background-image: url("gameimages/backimage.jpg");
+                
+            }
+            
+                  
+            
+             .uilabels
+            {
+                font-size: 50px;
+                color: red;                 
+                
+            }
+           
+             
+          
+    

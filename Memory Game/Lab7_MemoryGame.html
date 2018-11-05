@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Memory Game</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="lab7style.css">
+            
+    </head>
+    
+    <body>
+        <script src="lab7javascript.js"> </script>
+              
+        <div id="div1" >
+        <button onclick="initializegame()" > New Game </button>
+        </div>
+            
+          <!--THIS SECTION CONTAINS GAME AUDIO.................................................................-->  
+            <audio id="myAudio"  >
+ 
+                    <source src="gamesounds/bell.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+            </audio>
+            
+              <audio id="winneraudio" >
+ 
+                    <source src="gamesounds/winner.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+              </audio>
+            
+            <audio id="loseraudio" >
+ 
+                <source src="gamesounds/loser.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <audio id="wrongaudio" >
+ 
+                <source src="gamesounds/wrong2.wav" type="audio/wav">
+                 Your browser does not support the audio element.
+            </audio>
+        <!--THIS IS THE END OF GAME AUDIO SECTION...............................................................-->
+        
+           <!--THIS SECTION CONTAINS LABELS TO DISPLAY SCORES,TIME AND TRIALS...................................--> 
+            <table id="uitable" >
+                <tr>
+                    <td class="tdd" id="td1">
+                            <label class="uilabels" >Score:</label>
+                    
+                            <label class="uilabels" id="score" >0</label>
+                           
+                    </td>
+                    
+                    <td class="tdd" id="td2" >
+                         <label class="uilabels" >Time:</label>
+                         <label class="uilabels" id="time" >0</label>
+                          &nbsp;
+                             <label class="uilabels" id="seconds" >seconds</label>
+                          
+                     </td>
+                     
+                     <td class="tdd" id="td3">
+                            <label class="uilabels" >Tries:</label>
+                            <label class="uilabels" id="tries" >0</label>
+                    </td>
+                    
+                    </tr>
+            </table>
+            <!--THIS IS THE END OF UI LABELS SECTION............................................................-->
+            
+            
+            <!--THIS SECTION CONTAINS THE GAME CARDS STORED IN A TABLE..........................................-->
+        <table >
+            <tr>
+                <td >
+            <img class="cards" id="R1C1" src="back.jpg" alt="Card face down" onclick="flipcard(0,'R1C1',0)">
+                </td>
+                 <td>
+            <img  class="cards" ID="R1C2" src="back.jpg" alt="Card face down" onclick="flipcard(1,'R1C2',1)">
+                </td>
+                 <td>
+            <img   class="cards" ID="R1C3" src="back.jpg" alt="Card face down" onclick="flipcard(2,'R1C3',2)">
+                </td>
+                <td>
+            <img  class="cards"  ID="R1C4" src="back.jpg" alt="Card face down" onclick="flipcard(3,'R1C4',3)">
+                </td>
+                 
+            </tr>
+            
+            <tr>
+                <td>
+            <img  class="cards" ID="R2C1" src="back.jpg" alt="Card face down" onclick="flipcard(4,'R2C1',4)">
+                </td>
+                 <td>
+            <img  class="cards" ID="R2C2" src="back.jpg" alt="Card face down" onclick="flipcard(5,'R2C2',5)">
+                </td>
+                <td>
+            <img  class="cards" ID="R2C3" src="back.jpg" alt="Card face down" onclick="flipcard(6,'R2C3',6)">
+                </td>
+                 <td>
+            <img  class="cards" ID="R2C4" src="back.jpg" alt="Card face down" onclick="flipcard(7,'R2C4',7)">
+                </td>
+                
+            </tr>
+            
+            
+            <tr>
+                 <td>
+            <img  class="cards" ID="R3C1" src="back.jpg" alt="Card face down" onclick="flipcard(8,'R3C1',8)">
+                </td>
+                 <td>
+            <img  class="cards" ID="R3C2" src="back.jpg" alt="Card face down" onclick="flipcard(9,'R3C2',9)">
+                </td>
+                <td>
+            <img  class="cards" ID="R3C3" src="back.jpg" alt="Card face down" onclick="flipcard(10,'R3C3',10)">
+                </td>
+                 <td>
+            <img  class="cards" ID="R3C4" src="back.jpg" alt="Card face down" onclick="flipcard(11,'R3C4',11)">
+                </td>
+            </tr>
+            
+            
+        </table>
+           <!--THIS IS THE END OF GAME CARDS TABLE SECTION..........................................-->
+        
+    </body>
+</html>
